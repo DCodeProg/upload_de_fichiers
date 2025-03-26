@@ -8,8 +8,8 @@ WORKDIR /var/www/html
 COPY . /var/www/html
 
 # Donner les permissions nécessaires
-RUN chmod -R 755 /var/www/html/storage && \
-    chown -R www-data:www-data /var/www/html/storage
+RUN chmod -R 755 /var/www/html && \
+    chown -R www-data:www-data /var/www/html
 
 # Exposer le port 80
 EXPOSE 80
